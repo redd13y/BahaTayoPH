@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us — BahaTayo PH</title>
+  <link rel="stylesheet" href="bahatayoph.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+          <path d="M3 18c0 0 3-3 6-3s6 3 9 3 3-3 3-3"/>  
+          <path d="M3 12c0 0 3-3 6-3s6 3 9 3 3-3 3-3"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text">BahaTayo PH</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="understandingfloods.html">Understanding Floods</a></li>
+      <li><a href="floodcontrol.html">Flood Control</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="AboutUs.html" class="active">About Us</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+    <button class="nav-cta">Learn the Facts</button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-dropdown" id="nav-dropdown">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="understandingfloods.html" onclick="closeMenu()">Understanding Floods</a>
+    <a href="floodcontrol.html" onclick="closeMenu()">Flood Control</a>
+    <a href="community.html" onclick="closeMenu()">Community</a>
+    <a href="AboutUs.html" onclick="closeMenu()">About Us</a>
+    <a href="sources.html" onclick="closeMenu()">Sources</a>
+    <a href="#" class="nav-cta-mobile" onclick="closeMenu()">Learn the Facts</a>
+  </nav>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <span class="banner-orb o1"></span>
+  <span class="banner-orb o2"></span>
+  <span class="banner-orb o3"></span>
+  <div class="banner-inner">
+    <div class="banner-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span class="current">About Us</span>
+    </div>
+    <h1>We Are <em>BahaTayo PH</em></h1>
+    <p>A group of Filipino students and advocates committed to raising awareness about flood vulnerability — and driving change through the lens of SDG 11.</p>
+  </div>
+  <svg class="banner-wave" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 C300,40 600,0 900,20 C1050,30 1150,10 1200,20 L1200,40 L0,40 Z" fill="#fff"/>
+  </svg>
+</section>
+
+<!-- MISSION STRIP -->
+<div class="mission-strip">
+  <div class="mission-item">
+    <div class="mission-item-icon">🎯</div>
+    <h3>Our Mission</h3>
+    <p>To educate and empower Filipino communities with the knowledge to understand, advocate for, and act on flood resilience under SDG 11.</p>
+  </div>
+  <div class="mission-item">
+    <div class="mission-item-icon">👁</div>
+    <h3>Our Vision</h3>
+    <p>A Philippines where every city and community is prepared, protected, and heard — where floods no longer mean helplessness.</p>
+  </div>
+  <div class="mission-item">
+    <div class="mission-item-icon">🌊</div>
+    <h3>Our Focus</h3>
+    <p>SDG 11 — Sustainable Cities and Communities — as the framework for understanding and addressing the root causes of flooding in the Philippines.</p>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="section" id="story">
+  <div class="story-grid">
+    <div class="story-text">
+      <div class="section-label">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20M2 12h20"/></svg>
+        Our Story
+      </div>
+      <h2>Born from Frustration, Built on Hope</h2>
+      <p>BahaTayo PH started as a school advocacy project — but quickly became something bigger. We were frustrated watching our communities flood year after year, hearing the same promises, and seeing the same neglect.</p>
+      <p>We realized that most Filipinos understand floods as inevitable. But floods are not just natural events — they are the result of policy choices, land use decisions, and years of under-investment in urban resilience. We built this platform to change that narrative.</p>
+      <p>The name <strong>BahaTayo</strong> is a play on words — <em>"baha"</em> (flood) and <em>"tayo"</em> (us / we rise) — because we believe communities don't just endure floods. They rise from them.</p>
+
+      <div class="name-breakdown">
+        <div class="name-piece">
+          <span class="syllable">Baha</span>
+          <span class="meaning">Flood</span>
+        </div>
+        <span class="name-plus">+</span>
+        <div class="name-piece">
+          <span class="syllable">Tayo</span>
+          <span class="meaning">Us / We Rise</span>
+        </div>
+        <div class="name-equals-wrap">
+          <span class="name-equals">=</span>
+          <p class="name-result">A reminder that floods are something <strong>we</strong> face and rise from — together.</p>
+        </div>
+      </div>
+    </div>
+    <div class="story-visual">
+      <div class="sdg-wheel">
+        <div class="sdg-tile" style="background:#E5243B;">SDG 1<br/>No Poverty</div>
+        <div class="sdg-tile" style="background:#26BDE2;">SDG 6<br/>Clean Water</div>
+        <div class="sdg-tile" style="background:#FD9D24;font-size:11px;font-weight:900;">SDG 11<br/>Sustainable Cities ★</div>
+        <div class="sdg-tile" style="background:#3F7E44;">SDG 13<br/>Climate Action</div>
+      </div>
+      <p>Our work is rooted in SDG 11, with connections across the 2030 Agenda for Sustainable Development.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="quote-section">
+  <blockquote>We don't just report on the flood. We report on <em>who gets to rise from it.</em></blockquote>
+  <cite>— The BahaTayo PH Team</cite>
+</section>
+
+<!-- TEAM -->
+<section class="section" id="team">
+  <div style="text-align:center;margin-bottom:2rem;">
+    <div class="section-label" style="justify-content:center;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      The Team
+    </div>
+    <h2 class="section-title">Meet the People Behind BahaTayo PH</h2>
+    <p class="section-subtitle" style="margin:0 auto;">We are students, researchers, and advocates united by one belief: that understanding a problem is the first step to solving it.</p>
+  </div>
+
+  <div class="team-grid">
+
+    <!-- Member 1 -->
+    <div class="member-card">
+      <div class="member-topbar" style="background: linear-gradient(90deg, #FD9D24, #c87a10);"></div>
+      <div class="member-role-icon" style="background: linear-gradient(135deg, #FD9D24, #c87a10);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="member-body">
+        <div class="member-name">Yeshaya Kristoffer Ramirez</div>
+        <div class="member-role">Project Lead &amp; Lead Researcher</div>
+        <div class="member-bio">Oversees research direction and advocacy strategy. Passionate about community-based disaster risk reduction and SDG implementation in the Philippines.</div>
+        <div class="member-social">
+          <a href="#" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="member-card">
+      <div class="member-topbar" style="background: linear-gradient(90deg, #16213e, #0f3460);"></div>
+      <div class="member-role-icon" style="background: linear-gradient(135deg, #16213e, #0f3460);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+      </div>
+      <div class="member-body">
+        <div class="member-name">Samantha Alexi M. Manalili</div>
+        <div class="member-role">Web Designer &amp; Visual Lead</div>
+        <div class="member-bio">Designs the platform's visual identity and user experience. Believes good design can make complex climate data accessible to every Filipino.</div>
+        <div class="member-social">
+          <a href="mailto:samantha.aleximanalili@.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/samantha-alexi-manalili-010939404/" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="member-card">
+      <div class="member-topbar" style="background: linear-gradient(90deg, #26A65B, #1e7d44);"></div>
+      <div class="member-role-icon" style="background: linear-gradient(135deg, #26A65B, #1e7d44);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+      </div>
+      <div class="member-body">
+        <div class="member-name">Cymone Alvero</div>
+        <div class="member-role">Content Writer &amp; Editor</div>
+        <div class="member-bio">Translates complex flood data and climate research into clear, compelling stories. Ensures every page is factual, human, and easy to understand.</div>
+        <div class="member-social">
+          <a href="#" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="member-card">
+      <div class="member-topbar" style="background: linear-gradient(90deg, #9B59B6, #6c3483);"></div>
+      <div class="member-role-icon" style="background: linear-gradient(135deg, #9B59B6, #6c3483);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </div>
+      <div class="member-body">
+        <div class="member-name">Jeff Dela Rosa</div>
+        <div class="member-role">Data Analyst &amp; Researcher</div>
+        <div class="member-bio">Gathers and verifies flood statistics, government data, and scientific research. Turns raw numbers into the infographics and timelines you see on this site.</div>
+        <div class="member-social">
+          <a href="#" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SDG Commitment box -->
+  <div class="sdg-commitment">
+    <div class="sdg-commitment-left">
+      <h3>Our Commitment to the SDGs</h3>
+      <p>BahaTayo PH aligns its advocacy with the United Nations 2030 Agenda. Our primary focus is SDG 11, but flood resilience connects across multiple goals — from poverty to clean water to climate action.</p>
+      <div class="sdg-pills">
+        <span class="sdg-pill" style="background:#E5243B;">SDG 1 — No Poverty</span>
+        <span class="sdg-pill" style="background:#26BDE2;">SDG 6 — Clean Water</span>
+        <span class="sdg-pill" style="background:#FD9D24;">SDG 11 — Sustainable Cities</span>
+        <span class="sdg-pill" style="background:#3F7E44;">SDG 13 — Climate Action</span>
+        <span class="sdg-pill" style="background:#56C02B;">SDG 15 — Life on Land</span>
+      </div>
+    </div>
+    <svg width="90" height="90" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0;opacity:0.85">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#FD9D24" stroke-width="2" opacity="0.4"/>
+      <circle cx="50" cy="50" r="36" fill="none" stroke="#FD9D24" stroke-width="1.5" opacity="0.3"/>
+      <text x="50" y="40" text-anchor="middle" font-size="10" font-weight="900" fill="#FD9D24" font-family="Inter,sans-serif" letter-spacing="1">SDG</text>
+      <text x="50" y="65" text-anchor="middle" font-size="24" font-weight="900" fill="#fff" font-family="Inter,sans-serif">11</text>
+    </svg>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div style="text-align:center;margin-bottom:2rem;">
+    <div class="section-label" style="justify-content:center;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      Get in Touch
+    </div>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle" style="margin:0 auto;">Have a tip, a correction, or a community story to share? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-card-icon" style="background: linear-gradient(135deg, #FD9D24, #c87a10); color:#fff;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <h4>Email Us</h4>
+      <p>For sources, corrections, or partnership inquiries, send us a message directly.</p>
+      <a href="mailto:bahatayoph@gmail.com" class="contact-link">bahatayoph@gmail.com</a>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-card-icon" style="background: linear-gradient(135deg, #26A65B, #1e7d44); color:#fff;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <h4>Share a Community Story</h4>
+      <p>Know a barangay-led flood initiative worth featuring? Tell us about it.</p>
+      <a href="community.html" class="contact-link">Go to Community Page</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <h2>Ready to Learn More?</h2>
+  <p>Explore our resources on flood causes, community stories, and what the Philippines can do differently.</p>
+  <a href="understandingfloods.html" class="cta-btn">Start with Understanding Floods →</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2025 BahaTayo PH — SDG 11 Advocacy Initiative for Filipino Communities</p>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="AboutUs.html#contact">Contact</a>
+    <a href="sources.html">Sources</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-toggle').classList.toggle('open');
+    document.getElementById('nav-dropdown').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('nav-toggle').classList.remove('open');
+    document.getElementById('nav-dropdown').classList.remove('open');
+  }
+</script>
+</body>
+</html>

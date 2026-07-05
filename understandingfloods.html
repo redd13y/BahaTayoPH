@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding Floods — BahaTayo PH</title>
+  <link rel="stylesheet" href="bahatayoph.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+          <path d="M3 18c0 0 3-3 6-3s6 3 9 3 3-3 3-3"/>
+          <path d="M3 12c0 0 3-3 6-3s6 3 9 3 3-3 3-3"/>
+        </svg>
+      </div>
+      <span class="nav-logo-text">BahaTayo PH</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="understandingfloods.html" class="active">Understanding Floods</a></li>
+      <li><a href="floodcontrol.html">Flood Control</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="AboutUs.html">About Us</a></li>
+      <li><a href="sources.html">Sources</a></li>
+    </ul>
+    <button class="nav-cta">Learn the Facts</button>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-dropdown" id="nav-dropdown">
+    <a href="index.html" onclick="closeMenu()">Home</a>
+    <a href="understandingfloods.html" onclick="closeMenu()">Understanding Floods</a>
+    <a href="floodcontrol.html" onclick="closeMenu()">Flood Control</a>
+    <a href="community.html" onclick="closeMenu()">Community</a>
+    <a href="AboutUs.html" onclick="closeMenu()">About Us</a>
+    <a href="sources.html" onclick="closeMenu()">Sources</a>
+    <a href="#" class="nav-cta-mobile" onclick="closeMenu()">Learn the Facts</a>
+  </nav>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner">
+  <div class="banner-inner">
+    <div class="banner-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span class="current">Understanding Floods</span>
+    </div>
+    <h1>Understanding Floods<br/>in the <em>Philippines</em></h1>
+    <p>Why the country remains vulnerable — and what geography, climate, and policy all have to do with it.</p>
+  </div>
+  <svg class="banner-wave" viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,20 C300,40 600,0 900,20 C1050,30 1150,10 1200,20 L1200,40 L0,40 Z" fill="#f9f6f1"/>
+  </svg>
+</section>
+
+<!-- SECTION 1: WHY FLOOD-PRONE -->
+<section class="section section-geo" id="why-flood-prone">
+  <div class="section-label">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+    Section 1
+  </div>
+  <h2 class="section-title">Why the Philippines Is Flood-Prone</h2>
+  <p class="section-subtitle">A combination of geography, weather patterns, and location makes the Philippines one of the world's most disaster-exposed nations.</p>
+
+  <div class="flood-prone-grid">
+    <!-- MAP -->
+    <div class="map-container">
+      <div class="live-map-embed">
+        <iframe
+          src="https://embed.windy.com/embed2.html?lat=12.5&lon=122.0&detailLat=12.5&detailLon=122.0&width=650&height=550&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=true&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=false&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1"
+          loading="lazy"
+          title="Live wind, monsoon, and typhoon tracking map of the Philippines"
+        ></iframe>
+      </div>
+
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot" style="background:#2c7fc7;"></span>Live wind &amp; monsoon flow</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#c0392b;"></span>Active typhoons / tropical systems</div>
+        <div class="legend-item"><span class="legend-dot" style="background:#FD9D24;"></span>Pressure &amp; storm tracking</div>
+      </div>
+      <p class="map-caption">Live map powered by Windy.com — pan, zoom, and switch layers (wind, rain, clouds) directly on the map. Use the menu inside the embed to track active typhoons in real time.</p>
+    </div>
+
+    <!-- INFO CARDS -->
+    <div>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-icon">🌏</div>
+          <h4>Archipelagic Geography</h4>
+          <p>7,641 islands surrounded by ocean mean long coastlines exposed to storm surges and sea-level rise from every direction.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🌬</div>
+          <h4>Monsoon Seasons</h4>
+          <p>Habagat (southwest monsoon) brings heavy rains from June–October. Amihan (northeast) causes floods in eastern areas November–February.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🌀</div>
+          <h4>Typhoon Belt</h4>
+          <p>The Philippines sits in one of the world's most active typhoon zones — averaging 20 typhoons per year, 8–9 of which make direct landfall.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🏘</div>
+          <h4>Coastal Communities</h4>
+          <p>Over 60% of Filipinos live in coastal areas, many in informal settlements on floodplains with little protection or early-warning access.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🏔</div>
+          <h4>Deforestation</h4>
+          <p>The Philippines has lost over 90% of its original forest cover, removing natural barriers that absorb rainfall and prevent runoff.</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">🏙</div>
+          <h4>Urban Sprawl</h4>
+          <p>Rapid urbanization has replaced natural drainage with concrete, causing rainwater to surge into streets and settlements instead of soaking into the ground.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: CAUSES OF FLOODING (PAGASA) -->
+<section class="section section-causes" id="causes-of-flooding">
+  <div class="section-label">
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+    Section 2
+  </div>
+  <h2 class="section-title">Causes of Flooding in the Philippines</h2>
+  <p class="section-subtitle">According to the Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA), flooding in the Philippines stems from both natural phenomena and human-made factors.</p>
+
+  <div class="causes-grid">
+
+    <!-- NATURAL CAUSES -->
+    <div class="causes-col">
+      <div class="causes-col-header natural">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20M2 12h20"/></svg>
+        Natural Causes
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🌧</div>
+        <div class="cause-body">
+          <h4>Meteorological Events</h4>
+          <p>Intense and prolonged rainfall spells are a primary trigger. Unusually high coastal and estuarine water levels caused by storm surges and seiches also contribute significantly to flooding along coastlines.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🌀</div>
+        <div class="cause-body">
+          <h4>Tropical Cyclones & Monsoons</h4>
+          <p>The Philippines experiences an average of 20 typhoons per year. These, in combination with the Habagat (southwest monsoon) or Amihan (northeast monsoon), can bring extreme and sustained rainfall capable of overwhelming river systems and drainage networks.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🌊</div>
+        <div class="cause-body">
+          <h4>Seismic Activities</h4>
+          <p>Tsunamis (seismic sea waves), the sinking of land due to earthquakes, and the uplifting of lake and river beds from seismic causes can all result in the overflowing of rivers and bodies of water.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🌕</div>
+        <div class="cause-body">
+          <h4>Astronomically-Influenced Phenomena</h4>
+          <p>High tides coinciding with heavy rainfall events can worsen coastal flooding — an increasing concern as sea levels rise due to climate change.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTIFICIAL CAUSES -->
+    <div class="causes-col">
+      <div class="causes-col-header artificial">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Human-Made Causes
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🌲</div>
+        <div class="cause-body">
+          <h4>Deforestation of Watersheds</h4>
+          <p>The denudation of forest and watershed areas alters the ecological system of river basins. With over 90% of original forest cover lost, rainwater rushes directly into rivers instead of being absorbed — drastically increasing flood risk.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🗑</div>
+        <div class="cause-body">
+          <h4>Garbage & Clogged Drainage</h4>
+          <p>Throwing garbage in esteros and rivers — including plastic wrappers — clogs drainage systems. PAGASA explicitly identifies this as a preventable human contribution to flooding that communities can directly address.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">🏗</div>
+        <div class="cause-body">
+          <h4>Construction & Infrastructure Failures</h4>
+          <p>Construction of temporary dams can impede river flow and cause overflow. Failures of dikes, levees, and other hydraulic structures — or their mismanagement — can release enormous volumes of water into populated areas.</p>
+        </div>
+      </div>
+
+      <div class="cause-card">
+        <div class="cause-icon">💥</div>
+        <div class="cause-body">
+          <h4>Blasting & Land Disturbance</h4>
+          <p>Blasting in hilly or mountainous areas can cause landslides that unintentionally dam rivers and streams — leading to sudden upstream flooding and eventual catastrophic release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flood types strip -->
+  <div class="flood-types-strip">
+    <div class="flood-type-card">
+      <div class="flood-type-icon">💧</div>
+      <h4>Minor Flooding</h4>
+      <p>Inundation due to accumulation of excessive surface run-off in low-lying areas. Floodwaters are usually shallow and confined to the river's flood plain.</p>
+    </div>
+    <div class="flood-type-card">
+      <div class="flood-type-icon">🌊</div>
+      <h4>Major Flooding</h4>
+      <p>Caused by rivers and lakes overflowing, breaks in dikes and levees, or uncontrollable releases from reservoirs. Covers wide areas rapidly and can be deeply destructive.</p>
+    </div>
+    <div class="flood-type-card highlight">
+      <div class="flood-type-icon">⚡</div>
+      <h4>Flash Floods</h4>
+      <p>Develop in 6 hours or less — typically in hilly and mountainous terrain with steep river slopes. Extremely dangerous due to sudden onset with little warning time.</p>
+    </div>
+  </div>
+
+  <!-- Citation -->
+  <div class="pagasa-citation">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+    <p>Source: Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA) — DOST. <em>Floods: Causes, Types, and Safety.</em> Learning Tools. Retrieved July 2025 from <a href="https://pagasa.dost.gov.ph/learning-tools/floods" target="_blank" rel="noopener">pagasa.dost.gov.ph/learning-tools/floods</a></p>
+  </div>
+</section>
+
+<!-- SECTION 3: CLIMATE CHANGE -->
+<section class="section section-dark-alt" id="climate-change">
+  <div class="section-label">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20M2 12h20"/></svg>
+    Section 3
+  </div>
+  <h2 class="section-title">Climate Change Is Making It Worse</h2>
+  <p class="section-subtitle">As global temperatures rise, the flood risks the Philippines already faces are being amplified — with measurable, devastating consequences.</p>
+
+  <div class="climate-split">
+    <div class="climate-visual">
+      <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:280px;margin-bottom:1rem;">
+        <defs>
+          <radialGradient id="earthGlow" cx="35%" cy="30%" r="75%">
+            <stop offset="0%" stop-color="#42A5F5"/>
+            <stop offset="60%" stop-color="#1565C0"/>
+            <stop offset="100%" stop-color="#0D3C75"/>
+          </radialGradient>
+          <clipPath id="earthClip">
+            <circle cx="130" cy="100" r="58"/>
+          </clipPath>
+          <marker id="arr-red" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 Z" fill="#e53e3e"/>
+          </marker>
+        </defs>
+
+        <!-- Heat rings -->
+        <circle cx="130" cy="92" r="76" fill="none" stroke="#FD9D24" stroke-width="1.5" opacity="0.35" stroke-dasharray="4,4"/>
+        <circle cx="130" cy="92" r="88" fill="none" stroke="#FD9D24" stroke-width="1" opacity="0.2" stroke-dasharray="3,5"/>
+
+        <!-- Earth globe -->
+        <g>
+          <circle cx="130" cy="92" r="58" fill="url(#earthGlow)"/>
+          <g clip-path="url(#earthClip)" transform="translate(0,-8)">
+            <!-- North & South America (west side) -->
+            <path d="M82,48 Q90,42 96,46 Q100,52 96,58 Q102,62 100,70 Q96,78 88,82 Q92,90 86,98 Q80,106 76,100 Q72,92 76,84 Q70,80 72,72 Q68,64 74,58 Q72,50 82,48 Z" fill="#3FA34D"/>
+            <!-- Africa & Europe (center) -->
+            <path d="M118,42 Q128,38 134,44 Q140,40 146,46 Q150,54 146,60 Q150,68 146,76 Q148,86 142,96 Q136,104 130,98 Q124,92 126,84 Q120,80 122,72 Q116,68 118,60 Q112,54 118,42 Z" fill="#3FA34D"/>
+            <!-- Asia & Australia (east side) -->
+            <path d="M156,44 Q166,40 174,46 Q182,44 188,50 Q192,58 186,64 Q190,72 184,78 Q188,86 180,90 Q172,92 168,86 Q160,88 158,80 Q152,78 154,70 Q148,66 152,58 Q150,50 156,44 Z" fill="#3FA34D"/>
+            <ellipse cx="178" cy="108" rx="9" ry="6" fill="#3FA34D"/>
+          </g>
+          <!-- subtle terrain shading -->
+          <g clip-path="url(#earthClip)" transform="translate(0,-8)" opacity="0.35">
+            <ellipse cx="88" cy="68" rx="10" ry="14" fill="#2C8C3C"/>
+            <ellipse cx="132" cy="64" rx="9" ry="12" fill="#2C8C3C"/>
+            <ellipse cx="170" cy="62" rx="11" ry="10" fill="#2C8C3C"/>
+          </g>
+          <circle cx="130" cy="92" r="58" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <ellipse cx="113" cy="72" rx="20" ry="13" fill="rgba(255,255,255,0.18)"/>
+        </g>
+
+        <!-- Typhoon spiral above globe -->
+        <g transform="translate(130,26)" stroke="#FD9D24" fill="none" stroke-width="2" stroke-linecap="round">
+          <path d="M0,0 a10,10 0 1,1 -0.1,0" opacity="0.9"/>
+          <path d="M0,-6 a4,4 0 1,1 -0.1,0" opacity="0.9"/>
+        </g>
+        <circle cx="130" cy="26" r="2.2" fill="#FD9D24"/>
+
+        <!-- Rising temperature arrow -->
+        <line x1="38" y1="150" x2="38" y2="106" stroke="#e53e3e" stroke-width="2.5" marker-end="url(#arr-red)"/>
+        <text x="46" y="132" font-size="10" fill="#e53e3e" font-family="Inter,sans-serif" font-weight="700">+1.5°C</text>
+
+        <!-- Subtle rain under globe -->
+        <g fill="#64B5F6" opacity="0.7">
+          <ellipse cx="100" cy="172" rx="2.5" ry="5"/>
+          <ellipse cx="115" cy="180" rx="2.5" ry="5"/>
+          <ellipse cx="132" cy="174" rx="2.5" ry="5"/>
+          <ellipse cx="148" cy="181" rx="2.5" ry="5"/>
+          <ellipse cx="163" cy="173" rx="2.5" ry="5"/>
+        </g>
+
+        <!-- Flood water baseline -->
+        <path d="M20,196 Q90,186 130,194 Q175,202 240,190 L240,220 L20,220 Z" fill="#0D47A1" opacity="0.55"/>
+      </svg>
+      <h3>A Warming Planet</h3>
+      <p>Every 1°C rise in global temperature intensifies rainfall and strengthens typhoons.</p>
+    </div>
+
+    <div class="climate-facts">
+      <div class="climate-fact">
+        <div class="fact-icon-wrap" style="background:#fff0f0;">🌀</div>
+        <div class="fact-body">
+          <h4>Stronger Storms</h4>
+          <p>Warmer ocean surfaces fuel more intense typhoons. Super Typhoon Yolanda (2013) reached wind speeds of 315 km/h — among the strongest ever recorded at landfall.</p>
+        </div>
+      </div>
+      <div class="climate-fact">
+        <div class="fact-icon-wrap" style="background:#e8f4fd;">🌊</div>
+        <div class="fact-body">
+          <h4>Rising Sea Levels</h4>
+          <p>Philippine seas are rising 3× faster than the global average — up to 14mm per year in some areas. This worsens storm surges and saltwater intrusion into coastal communities.</p>
+        </div>
+      </div>
+      <div class="climate-fact">
+        <div class="fact-icon-wrap" style="background:#f0fdf4;">🌧</div>
+        <div class="fact-body">
+          <h4>Unpredictable Rainfall</h4>
+          <p>Climate change disrupts monsoon patterns, causing prolonged droughts followed by extreme rainfall events — overwhelming drainage systems never designed for such volumes.</p>
+        </div>
+      </div>
+      <div class="climate-fact">
+        <div class="fact-icon-wrap" style="background:#fff7ee;">🌡</div>
+        <div class="fact-body">
+          <h4>Urban Heat Islands</h4>
+          <p>Cities like Metro Manila trap heat, intensifying local rainfall. Combined with impermeable surfaces, this causes flash floods even from moderate rain events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: TIMELINE -->
+<section class="section section-timeline" id="timeline" style="padding-left:0;padding-right:0;">
+  <div style="padding: 0 2.5rem 1.5rem;">
+    <div class="section-label">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Section 4
+    </div>
+    <h2 class="section-title">Timeline of Major Flood Events</h2>
+    <p class="section-subtitle">A look at the deadliest and most destructive floods to hit the Philippines — and the communities still rebuilding.</p>
+  </div>
+
+  <div class="timeline-scroll">
+    <div class="timeline-track">
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot severe"></div></div>
+        <div class="timeline-card severe">
+          <div class="timeline-year">September 2009</div>
+          <div class="timeline-name">Typhoon Ondoy (Ketsana)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              464 deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱11 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">Dumped a month's worth of rain in 6 hours over Metro Manila. Marikina River rose 6m above flood level. Nearly 1 million displaced.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot severe"></div></div>
+        <div class="timeline-card severe">
+          <div class="timeline-year">December 2011</div>
+          <div class="timeline-name">Typhoon Sendong (Washi)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              1,257 deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱2.5 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">Flash floods and mudslides devastated Cagayan de Oro and Iligan City in Mindanao. Struck at midnight, catching residents asleep.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot severe"></div></div>
+        <div class="timeline-card severe">
+          <div class="timeline-year">November 2013</div>
+          <div class="timeline-name">Super Typhoon Yolanda (Haiyan)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              6,300+ deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱571 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">The strongest tropical cyclone ever to make landfall. A 5–6m storm surge obliterated Tacloban City. 4 million people displaced.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-year">October 2015</div>
+          <div class="timeline-name">Typhoon Lando (Koppu)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              58 deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱7 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">Slow-moving typhoon dumped record rainfall over Central Luzon. Cagayan Valley flooded for weeks, destroying rice harvests and displacing 216,000 people.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot severe"></div></div>
+        <div class="timeline-card severe">
+          <div class="timeline-year">November 2020</div>
+          <div class="timeline-name">Typhoon Ulysses (Vamco)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              101 deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱12.4 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">Struck during pandemic lockdowns. Floodwaters reached rooftops in Marikina and Cagayan Valley — the worst flooding in decades for many communities.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot severe"></div></div>
+        <div class="timeline-card severe">
+          <div class="timeline-year">December 2021</div>
+          <div class="timeline-name">Super Typhoon Odette (Rai)</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              375 deaths
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              ₱35 billion in damages
+            </div>
+          </div>
+          <div class="timeline-impact">Devastated Visayas and Mindanao just before Christmas. Siargao, Bohol, Cebu, and Surigao saw catastrophic flooding and storm surges. 500,000+ homes damaged.</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot-wrap"><div class="timeline-dot"></div></div>
+        <div class="timeline-card">
+          <div class="timeline-year">2024–Present</div>
+          <div class="timeline-name">Escalating Flood Events</div>
+          <div class="timeline-meta">
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Hundreds annually
+            </div>
+            <div class="timeline-meta-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Billions per event
+            </div>
+          </div>
+          <div class="timeline-impact">Increasingly frequent flooding with shorter recovery windows. Communities in NCR, Cagayan Valley, and Bicol report annual floods with rising intensity — a pattern consistent with climate projections.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Callout -->
+  <div style="padding: 0 2.5rem;">
+    <div class="callout">
+      <div class="callout-icon">📢</div>
+      <div class="callout-text">
+        <h4>These are not isolated events — they are a pattern.</h4>
+        <p>Every flood on this timeline exposed the same gaps: inadequate drainage, poor land-use policy, underprepared communities, and delayed government response.</p>
+      </div>
+      <a href="community.html#solutions" class="callout-btn">Explore Solutions →</a>
+    </div>
+  </div>
+
+  <!-- Timeline sources -->
+  <div class="timeline-sources">
+    <div class="timeline-sources-inner">
+      <h4>📋 Sources</h4>
+      <ul>
+        <li><strong>Typhoon Ondoy (2009):</strong> World Bank / GFDRR. <em>Typhoons Ondoy and Pepeng: Post-Disaster Needs Assessment.</em> 2009. <a href="https://www.preventionweb.net/publication/documents-and-publications/typhoons-ondoy-and-pepeng-post-disaster-needs-assessment" target="_blank" rel="noopener">PreventionWeb</a>; NDRRMC Situation Reports.</li>
+        <li><strong>Typhoon Sendong (2011):</strong> National Disaster Risk Reduction and Management Council (NDRRMC). Situation Report No. 34, December 2011.</li>
+        <li><strong>Super Typhoon Yolanda (2013):</strong> NDRRMC Final Report; Wikipedia — <a href="https://en.wikipedia.org/wiki/Typhoon_Haiyan" target="_blank" rel="noopener">Typhoon Haiyan</a>. Death toll of 6,300 confirmed by NDRRMC as of April 17, 2016.</li>
+        <li><strong>Typhoon Lando (2015):</strong> NDRRMC Final Report No. 45, October 2015.</li>
+        <li><strong>Typhoon Ulysses (2020):</strong> NDRRMC Situation Reports; The ASEAN Post. <em>Five Typhoons in a Row Test for Duterte.</em> November 2020.</li>
+        <li><strong>Super Typhoon Odette (2021):</strong> NDRRMC Situation Reports; Inquirer News. <em>Odette leaves P24.5-billion damage; death toll hits 407.</em> January 2022. <a href="https://newsinfo.inquirer.net/1535184/odette-leaves-p-24-5-b-damage-death-toll-hits-407" target="_blank" rel="noopener">inquirer.net</a></li>
+        <li><strong>General data:</strong> Philippine Statistics Authority (PSA). <em>Philippine Environment and Natural Resources Statistics (2010–2019).</em> <a href="https://psa.gov.ph" target="_blank" rel="noopener">psa.gov.ph</a></li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1a1a2e;padding:1.5rem 2.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.8rem;">
+  <p style="color:rgba(255,255,255,0.45);font-size:11.5px;">© 2025 BahaTayo PH — SDG 11 Advocacy Initiative</p>
+  <div style="display:flex;gap:1.2rem;">
+    <a href="index.html" style="color:rgba(255,255,255,0.45);font-size:11.5px;text-decoration:none;">← Back to Home</a>
+    <a href="sources.html" style="color:rgba(255,255,255,0.45);font-size:11.5px;text-decoration:none;">Sources</a>
+    <a href="AboutUs.html#contact" style="color:rgba(255,255,255,0.45);font-size:11.5px;text-decoration:none;">Contact</a>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('nav-toggle').classList.toggle('open');
+    document.getElementById('nav-dropdown').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('nav-toggle').classList.remove('open');
+    document.getElementById('nav-dropdown').classList.remove('open');
+  }
+</script>
+</body>
+</html>
